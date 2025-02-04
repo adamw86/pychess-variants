@@ -66,6 +66,17 @@ whiteDropRegion = *1 *2 *3 *4 *5
 blackDropRegion = *4 *5 *6 *7 *8
 immobilityIllegal = true
 
+# Chess²
+# A game
+[chess2:chess]
+startFen = rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1
+#pieceDrops = true
+#capturesToHand = false
+customPiece1 = t:WNB
+customPiece2 = d:FRpmRmN
+customPiece3 = v:ADNWfF
+promotionPieceTypes = nbrtq
+
 [orda:chess]
 centaur = h
 knibis = a
