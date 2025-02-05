@@ -41,7 +41,7 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
 
 export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     ataxx: { pieceCSS: ["disguised", "virus", "zombie", "cat-dog"] },
-    chess2: { pieceCSS: ["capa0", "capa1", "capa2", "capa3", "capa4", "capa5", "disguised"] },
+    chess2: { pieceCSS: ["alpha"] },
     standard: { pieceCSS: ["standard", "green", "alpha", "chess_kaneo", "santa", "maestro", "dubrovny", "atopdown", "luffy", "disguised"] },
     capa: { pieceCSS: ["capa0", "capa1", "capa2", "capa3", "capa4", "capa5", "disguised"] },
     dragon: { pieceCSS: ["dragon1", "dragon0", "dragon2", "disguised"] },
@@ -849,9 +849,9 @@ export const VARIANTS: Record<string, Variant> = {
     }),
 
     chess2: variant({
-        name: "chess2", tooltip: "Chess2",
+        name: "chess2", tooltip: "Chess2 tooltip...",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1",
-        chess960: true, icon: "M",
+        icon: "M",
         boardFamily: "standard8x8", pieceFamily: "chess2",
         pieceRow: ["k", "q", "t", "r", "b", "n", "p"],
         rules: { enPassant: true },

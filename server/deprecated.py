@@ -15,6 +15,7 @@ BYOS = (
 )
 
 V2C_ORIG = {
+    "chess2" : "ℵ",
     "ataxx": "Z",
     "chess": "n",
     "capablanca": "c",
@@ -75,6 +76,7 @@ V2C_ORIG = {
 
 VARIANTS_ORIG = (
     "chess",
+    "chess2"
     "chess960",
     "bughouse",
     "bughouse960",
@@ -157,6 +159,7 @@ VARIANT_ICONS_ORIG = {
     "janggi": "=",
     "xiangqi": "|",
     "chess": "M",
+    "chess2": "M",
     "crazyhouse": "+",
     "placement": "S",
     "capablanca": "P",
