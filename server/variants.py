@@ -49,7 +49,7 @@ class ServerVariants(Enum):
         self.move_decoding = variant.move_decoding
 
     CHESS = Variant("n", "chess", _("Chess"), "M")
-    CHESS2 = Variant("$", "chess2", _("Chess2"), "M")
+    CHESS2 = Variant("ℵ", "chess2", _("Chess2"), "M")
     CHESS960 = Variant("n", "chess", _("Chess960"), "V", chess960=True)
     BUGHOUSE = Variant("F", "bughouse", _("Bughouse"), "¢", two_boards=True, base_variant="crazyhouse")  # fmt: skip
     BUGHOUSE960 = Variant("F", "bughouse", _("Bughouse960"), "⌀", chess960=True, two_boards=True, base_variant="crazyhouse")  # fmt: skip

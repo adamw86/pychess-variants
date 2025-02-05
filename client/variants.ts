@@ -851,7 +851,7 @@ export const VARIANTS: Record<string, Variant> = {
     chess2: variant({
         name: "chess2", tooltip: "Chess2",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1",
-        chess960: true, icon: "M", icon960: "V",
+        chess960: true, icon: "M",
         boardFamily: "standard8x8", pieceFamily: "chess2",
         pieceRow: ["k", "q", "t", "r", "b", "n", "p"],
         rules: { enPassant: true },
