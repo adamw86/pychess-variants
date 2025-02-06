@@ -1,48 +1,48 @@
-.standard piece._-piece {
+.chess2 piece._-piece {
     background-image: url('../../images/pieces/duck.svg');
 }
-.standard piece.p-piece.white {
+.chess2 piece.p-piece.white {
     background-image: url('../../images/pieces/alpha/wP.svg');
 }
-.standard piece.b-piece.white {
+.chess2 piece.b-piece.white {
     background-image: url('../../images/pieces/alpha/wB.svg');
 }
-.standard piece.n-piece.white {
+.chess2 piece.n-piece.white {
     background-image: url('../../images/pieces/alpha/wN.svg');
 }
-.standard piece.r-piece.white {
+.chess2 piece.r-piece.white {
     background-image: url('../../images/pieces/alpha/wR.svg');
 }
-.standard piece.q-piece.white {
+.chess2 piece.q-piece.white {
     background-image: url('../../images/pieces/alpha/wQ.svg');
 }
-.standard piece.k-piece.white {
+.chess2 piece.k-piece.white {
     background-image: url('../../images/pieces/alpha/wK.svg');
 }
-.standard piece.p-piece.black {
+.chess2 piece.p-piece.black {
     background-image: url('../../images/pieces/alpha/bP.svg');
 }
-.standard piece.b-piece.black {
+.chess2 piece.b-piece.black {
     background-image: url('../../images/pieces/alpha/bB.svg');
 }
-.standard piece.n-piece.black {
+.chess2 piece.n-piece.black {
     background-image: url('../../images/pieces/alpha/bN.svg');
 }
-.standard piece.r-piece.black {
+.chess2 piece.r-piece.black {
     background-image: url('../../images/pieces/alpha/bR.svg');
 }
-.standard piece.q-piece.black {
+.chess2 piece.q-piece.black {
     background-image: url('../../images/pieces/alpha/bQ.svg');
 }
-.standard piece.k-piece.black {
+.chess2 piece.k-piece.black {
     background-image: url('../../images/pieces/alpha/bK.svg');
 }
 
-.standard piece.t-piece.white {
+.chess2 piece.t-piece.white {
     background-image: url('../../images/pieces/alpha/wT.svg');
 }
 
-.standard piece.t-piece.black {
+.chess2 piece.t-piece.black {
     background-image: url('../../images/pieces/alpha/bT.svg');
 }
 

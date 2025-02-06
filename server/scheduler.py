@@ -30,6 +30,7 @@ SEATURDAY = ["makruk", "makpong", "sittuyin", "cambodian", "asean"]
 
 MONTHLY_VARIANTS = (
     "dobutsu",
+    "chess2",
     "capahouse",
     "chak",
     "shogun",
