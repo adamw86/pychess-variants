@@ -853,11 +853,29 @@ export const VARIANTS: Record<string, Variant> = {
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1",
         icon: "M",
         boardFamily: "standard8x8", pieceFamily: "chess2",
-        pieceRow: ["k", "q", "t", "r", "b", "n", "p"],
+        pieceRow: ["k", "q", "t", "d", "v", "r", "b", "n", "p"],
         rules: { enPassant: true },
         alternateStart: {
-            '': '',
-            'QvT': 'rnbtkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1',
+            '': "",
+
+            //Standard Matchups
+            'QvT': "rnbtkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+            'QvD': "rnbdkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+            'QvV': "rnbvkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+            'TvT': "rnbtkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1",
+            'TvD': "rnbdkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1",
+            'TvV': "rnbvkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1",
+            'DvQ': "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBDKBNR w KQkq - 0 1",
+            'DvT': "rnbtkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBDKBNR w KQkq - 0 1",
+            'DvD': "rnbdkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBDKBNR w KQkq - 0 1",
+            'DvV': "rnbvkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBDKBNR w KQkq - 0 1",
+            'VvQ': "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBVKBNR w KQkq - 0 1",
+            'VvT': "rnbtkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBVKBNR w KQkq - 0 1",
+            'VvD': "rnbdkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBVKBNR w KQkq - 0 1",
+            'VvV': "rnbvkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBVKBNR w KQkq - 0 1",
+
+            //Shuffled Starting Positions
+            
         },
     }),
 

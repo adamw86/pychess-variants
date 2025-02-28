@@ -149,6 +149,7 @@ VARIANT_960_TO_PGN = {
     "capablanca": "Caparandom",
     "capahouse": "Capahouse960",
     "seirawan": "Seirawan960",
+    "chess2": "Chess2",
     # to let lichess import work we produce variant names without "960" in PGNs
     "crazyhouse": "Crazyhouse",
     "atomic": "Atomic",

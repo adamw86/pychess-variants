@@ -5,6 +5,28 @@ from fairy import STANDARD_FEN
 VALID_FEN = {
     "alice": (LOOKING_GLASS_ALICE_FEN,),
     "fogofwar": (STANDARD_FEN,),
+    "chess2": (
+        "rnbtkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "rnbdkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "rnbvkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+
+        "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1",
+        "rnbtkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBJKBNR w KQkq - 0 1",
+        "rnbtkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1",
+        "rnbdkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1",
+        "rnbvkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1",
+
+        "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBDKBNR w KQkq - 0 1",
+        "rnbtkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBDKBNR w KQkq - 0 1",
+        "rnbdkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBDKBNR w KQkq - 0 1",
+        "rnbvkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBDKBNR w KQkq - 0 1",
+
+        "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBVKBNR w KQkq - 0 1",
+        "rnbtkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBVKBNR w KQkq - 0 1",
+        "rnbdkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBVKBNR w KQkq - 0 1",
+        "rnbvkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBVKBNR w KQkq - 0 1",
+
+    ),
     "capablanca": (
         "rnbcqkabnr/pppppppppp/10/10/10/10/PPPPPPPPPP/RNBCQKABNR w KQkq - 0 1",  # Bird
         "ranbqkbncr/pppppppppp/10/10/10/10/PPPPPPPPPP/RANBQKBNCR w KQkq - 0 1",  # Carrera
