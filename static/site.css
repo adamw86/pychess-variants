@@ -86,6 +86,7 @@
   --zoom: 100;
   --zoom-a: 100;
   --zoom-b: 100;
+  --block-gap: 15px;
 }
 [data-theme='dark'] {
   --dark-mode: 1;
@@ -365,7 +366,7 @@ iframe {
   grid-template-areas: '. . main . .';
   margin-top: var(--site-header-margin);
   place-content: center;
-  --main-max-width: 1400px;
+  --main-max-width: 1300px;
 }
 
 @media (max-width: 799px) {
@@ -398,7 +399,7 @@ iframe {
 @media (min-width: 800px) {
   .round {
     grid-template-columns:
-      minmax(230px, 20vw) minmax(
+      minmax(250px, 350px) minmax(
         calc(70vmin * var(--board-scale)),
         calc(
           100vh * var(--board-scale) -
@@ -751,8 +752,43 @@ ul.guide li {
 .nav-link:active {
   color: var(--blue-hover);
 }
+ /* --- Chess² Fonts & Styles --- */
+
+@font-face{
+  font-family:"CS Bulma";
+  src:url("CsBulma.woff") format("opentype");
+}
+@keyframes colorCycle {
+0% { color: red; }
+10% { color: orangered; }
+20% { color:  orange; }
+30% { color: gold; }
+40% { color: yellow; }
+50% { color: greenyellow; }
+60% { color: green; }
+70% { color: teal; }
+80% {color: mediumblue; }
+90% {color: rgb(150, 0, 204); }
+100% {color: rgb(205, 0, 133); }
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 .nav-link.home {
   font-size: 25px;
+  font-family: "CS Bulma";
+  font-size: 48px;
 }
 
 .nav-link.active.home {
@@ -760,7 +796,61 @@ ul.guide li {
 }
 
 .nav-link.active.home:hover {
-  color: var(--blue-hover);
+  /* color: var(--blue-hover); */
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+}
+
+
+.nav-link.active.home {
+  color: purple;
+  font-family:  "CS Bulma";
+  font-size: 48px;
+  animation: colorCycle 22.5s;
+  animation-iteration-count: 1;
+}
+
+#topnavTitle {
+
+}
+
+.site-title-nav {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 14px;
+}
+@media (max-width: 799px) {
+  .site-title-nav {
+    padding-left: 0;
+    flex-direction: column;
+  }
+}
+.topnav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: var(--site-header-height);
+  color: var(--font-color);
+}
+
+.topnav a {
+  float: left;
+  height: var(--site-header-height);
+  font-size: 14px;
+  color: purple;
+}
+.topnav section > a {
+    text-transform: uppercase;
+}
+.topnav span {
+  position: relative;
+  top: -12px;
+  margin-left: 5px;
+  font-size: 14px;
+  color: red;
+}
+.nav-link.home {
+  font-size: 25px;
 }
 
 .site-title-nav {
@@ -1145,12 +1235,15 @@ button.back {
   line-height: unset;
   padding: 1rem;
 }
-
+.site-buttons #settings-main button{
+font-size: 14px;
+}
 .user-link {
   padding-right: 8px;
 }
 @media only screen and (max-width: 799px) {
 .user-link {font-size: 0.8em;}
+.site-buttons #settings-main button {font-size: 12px;}
 }
 a {
   white-space: break-spaces;
