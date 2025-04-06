@@ -317,7 +317,8 @@ export class RoundController extends GameController {
                 buttons.push(h('button#draw', { on: { click: () => this.draw() }, props: { title: _('Draw') } }, h('i', '½')));
             }
             buttons.push(h('button#resign', { on: { click: () => this.resign() }, props: {title: _("Resign")} }, [h('i', {class: {"icon": true, "icon-flag-o": true} } ), ]));
-            
+            buttons.push(h('button#swap', { on: { click: () => this.swap() }, props: {title: _("Swap")} }, [h('i', {class: {"icon": true, "icon-flag-o": true} } ), ]));
+
             this.gameControls = patch(container, h('div.btn-controls.game', buttons));
 
             const manualCount = this.variant.ui.counting === 'makruk' && !(this.wtitle === 'BOT' || this.btitle === 'BOT');
@@ -511,6 +512,18 @@ export class RoundController extends GameController {
         if (doResign) {    
             this.doSend({ type: "resign", gameId: this.gameId });
         }
+    }
+    private swap = () => {
+        //const doSwap = ( localStorage.getItem("confirmresign") === "false" ) || confirm(_('Are you sure you want to resign?')) 
+        //if (doResign) { 
+    //    const origS2 = "T@";
+        const origS = "e2";
+        const destS = "e4";
+        this.sendMove(origS, destS, "");
+
+        //processInput(piece: cg.Piece, orig: cg.Orig, dest: cg.Key, meta: cg.MoveMetadata,
+        this.processInput()
+       // this.sendMove((origS as cg.Orig),(destS as cg.Key), "" );
     }
 
     // Janggi second player (Red) setup

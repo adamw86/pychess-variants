@@ -2479,6 +2479,10 @@ div.ctable-container {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+/*Pockets & Action Bars*/
+#pocket1 {
+  background-color: #0000cd !important;
+}
 
 .pocket-wrapper {
   justify-content: center;
@@ -2489,6 +2493,7 @@ div.ctable-container {
     height: calc(var(--piecerows) * var(--cg-height) / var(--ranks));
     display: flex;
     flex-wrap: wrap;
+   /* background-color: navy;*/
 }
 .pocket-top {
   grid-area: pocket-top;

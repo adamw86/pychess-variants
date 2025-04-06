@@ -373,7 +373,7 @@ async def index(request):
         template = get_template("index.html")
 
     if view == "lobby":
-        page_title = "PyChess • Free Online Chess Variants"
+        page_title = "Chess² decription (lobby view, index.py 376)"
     else:
         page_title = "%s • PyChess" % view.capitalize()
 

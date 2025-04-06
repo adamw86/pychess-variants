@@ -70,12 +70,13 @@ immobilityIllegal = true
 # A game
 [chess2:chess]
 startFen = rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBTKBNR w KQkq - 0 1
-#pieceDrops = true
+pieceDrops = true
 #capturesToHand = false
 customPiece1 = t:WNB
 customPiece2 = d:FRpmRmN
 customPiece3 = v:ADNWfF
-#promotionPieceTypes = nbrtq
+promotionPieceTypes = nbrtq
+
 
 [orda:chess]
 centaur = h

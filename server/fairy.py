@@ -479,6 +479,11 @@ if __name__ == "__main__":
     print(board.fen)
     board.print_pos()
     print(board.legal_moves())
+    
+    board = FairyBoard("chess2")
+    print(board.fen)
+    board.print_pos()
+    print(board.legal_moves())
 
     board = FairyBoard("capablanca")
     print(board.fen)
